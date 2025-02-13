@@ -82,7 +82,7 @@ const profiles = [
 const ExploreScreen = () => {
   const swiperRef = useRef(null);
 
-  return (
+  return (+
     <SafeAreaView style={styles.container}>
       {/* Header */}
       <HomeHeader />
