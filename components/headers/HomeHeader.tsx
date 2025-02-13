@@ -14,7 +14,7 @@ const HomeHeader = () => {
 
       {/* Center: Tinder Title (Slightly Right Shifted) */}
       <View style={styles.titleContainer}>
-        <Text style={styles.title}>Tinder</Text>
+        <Text style={styles.title}>Connect</Text>
       </View>
 
       {/* Right Side: Filter Icon */}

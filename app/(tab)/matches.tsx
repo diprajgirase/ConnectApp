@@ -23,7 +23,7 @@ const matches = [
   { id: '5', name: 'Ava', image: 'https://plus.unsplash.com/premium_photo-1673792686302-7555a74de717?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', status: 'online' },
   { id: '6', name: 'Ethan', image: 'https://plus.unsplash.com/premium_photo-1673792686302-7555a74de717?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', status: 'offline' },
   { id: '7', name: 'Daniel', image: 'https://plus.unsplash.com/premium_photo-1664533227571-cb18551cac82?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', status: 'offline' },
-  { id: '8', name: 'Ava', image: 'https://plus.unsplash.com/premium_photo-1672877991658-8c59a3bdef0f?q=80&w=500&h=500&fit=crop', status: 'online' },
+  { id: '8', name: 'Ava', image: 'https://plus.unsplash.com/premium_photo-1673792686302-7555a74de717?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', status: 'online' },
   { id: '9', name: 'Ethan', image: 'https://plus.unsplash.com/premium_photo-1672987456781-2a12d3d4e4d3?q=80&w=500&h=500&fit=crop', status: 'offline' },
   { id: '10', name: 'Ethan', image: 'https://plus.unsplash.com/premium_photo-1672987456781-2a12d3d4e4d3?q=80&w=500&h=500&fit=crop', status: 'offline' },
 ];

@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { useRouter, useNavigation } from "expo-router";
 
 export default function RegisterScreen() {
+  const router = useRouter();
   const navigation = useNavigation();
+
+  useEffect(() => {
+    navigation.setOptions({ headerShown: false });
+  }, []);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,9 +20,8 @@ export default function RegisterScreen() {
       return;
     }
 
-    // Here, integrate Firebase/Auth API
     Alert.alert("Success", "Account created!");
-    navigation.navigate("loginScreen"); // Navigate to login after successful registration
+    router.replace("/auth/loginScreen");
   };
 
   return (
@@ -53,7 +58,7 @@ export default function RegisterScreen() {
         <Text style={styles.buttonText}>Register</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate("loginScreen")}>
+      <TouchableOpacity onPress={() => router.replace("/auth/loginScreen")}>
         <Text style={styles.loginText}>Already have an account? Log in</Text>
       </TouchableOpacity>
     </View>
@@ -65,7 +70,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fd5068",
+    backgroundColor: "#FF1647", // Tinder dark theme
     paddingHorizontal: 30,
   },
   title: {
@@ -103,4 +108,3 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
   },
 });
-

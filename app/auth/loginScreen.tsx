@@ -1,19 +1,21 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
-import { useNavigation } from "@react-navigation/native";
+import { useRouter } from "expo-router";
+import { StatusBar } from 'react-native';
 
 const LoginScreen = () => {
-  const navigation = useNavigation();
+  const router = useRouter();
 
   return (
     <View style={styles.container}>
+      <StatusBar backgroundColor="#FF1647" barStyle="dark-content" />
       <View style={styles.content}>
-        <Image 
-          source={{ uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTposSuF2d6XXv6JZVcCqtSoovsSBTXNLFuMQ&s" }} 
-          style={styles.logo} 
+        <Image
+          source={{ uri: "https://i.redd.it/pdo2hmsefl881.jpg" }}
+          style={styles.logo}
         />
-        <Text style={styles.title}>It Starts with a Swipe™</Text>
+        <Text style={styles.title}>CONNECT</Text>
 
         <TouchableOpacity style={styles.button}>
           <AntDesign name="google" size={24} color="white" />
@@ -26,14 +28,14 @@ const LoginScreen = () => {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button}>
-          <AntDesign name="phone" size={24} color="white" />
+          <AntDesign name="mobile1" size={24} color="white" />
           <Text style={styles.buttonText}>Sign in with Phone</Text>
         </TouchableOpacity>
 
-        {/* Register Button */}
-        <TouchableOpacity 
-          style={styles.registerButton} 
-          onPress={() => navigation.navigate("registerScreen")}
+
+        <TouchableOpacity
+          style={styles.registerButton}
+          onPress={() => router.push("/auth/registerScreen")}
         >
           <Text style={styles.registerText}>New User? Register</Text>
         </TouchableOpacity>
@@ -47,18 +49,18 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fd5068", // Tinder-like solid background color
+    backgroundColor: "#FF1647", // Tinder solid background color
   },
   content: {
     alignItems: "center",
   },
   logo: {
-    width: 100,
+    width: 150,
     height: 100,
     marginBottom: 20,
   },
   title: {
-    fontSize: 22,
+    fontSize: 32,
     fontWeight: "bold",
     color: "white",
     marginBottom: 30,
@@ -66,7 +68,7 @@ const styles = StyleSheet.create({
   button: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "rgba(255, 255, 255, 0.4)", // Slightly transparent white
+    backgroundColor: "rgba(255, 255, 255, 0.4)",
     paddingVertical: 12,
     paddingHorizontal: 25,
     borderRadius: 30,

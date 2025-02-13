@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import Swiper from 'react-native-deck-swiper';
 import HomeHeader from '../../components/headers/HomeHeader';
 import SwipeCard from '../../components/cards/SwiperCard';
+import { StatusBar } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 
@@ -82,8 +83,10 @@ const profiles = [
 const ExploreScreen = () => {
   const swiperRef = useRef(null);
 
-  return (+
+  return (
+    
     <SafeAreaView style={styles.container}>
+           <StatusBar backgroundColor="white" barStyle="dark-content" />
       {/* Header */}
       <HomeHeader />
 
