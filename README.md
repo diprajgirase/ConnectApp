@@ -9,30 +9,34 @@ src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/a
 <img
 width="205"
 alt="Capture 2"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-intro.jpg">
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-register.jpg">
 <img
 width="205"
 alt="Capture 3"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-qs1.jpg">
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-intro.jpg">
 <img
 width="205"
 alt="Capture 4"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-qs3.jpg">
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-qs1.jpg">
 <img
 width="205"
 alt="Capture 5"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-home.jpg">
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-qs3.jpg">
 <img
 width="205"
 alt="Capture 6"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-matches.jpg">
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-home.jpg">
 <img
 width="205"
 alt="Capture 7"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-chats.jpg">
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-matches.jpg">
 <img
 width="205"
 alt="Capture 8"
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-chats.jpg">
+<img
+width="205"
+alt="Capture 9"
 src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-profilepage.jpg">
 
 
