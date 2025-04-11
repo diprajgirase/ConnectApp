@@ -5,27 +5,19 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 <img
 width="205"
 alt="Capture 1"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-login.jpg">
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-signin.png">
 <img
 width="205"
 alt="Capture 2"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-intro.jpg">
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-explore.png">
 <img
 width="205"
 alt="Capture 3"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-home.jpg">
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-matches.png">
 <img
 width="205"
 alt="Capture 4"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-matches.jpg">
-<img
-width="205"
-alt="Capture 5"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-chats.jpg">
-<img
-width="205"
-alt="Capture 6"
-src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-profilepage.jpg">
+src="https://github.com/diprajgirase/connect-dating-app-react-native/blob/main/assets/images/preview-profile.png">
 
 
 ## Get started

@@ -6,17 +6,18 @@ import {
   Image, 
   Text, 
   TouchableOpacity, 
-  Dimensions 
+  Dimensions
 } from 'react-native';
 import React from 'react';
 import MatchesHeader from '../../components/headers/MatchesHeader';
+import { useRouter } from 'expo-router';
 
 const { width } = Dimensions.get('window');
 const IMAGE_SIZE = width * 0.33; // Adjusted for better spacing
 const CARD_WIDTH = width * 0.45; // Responsive card width
 
 const matches = [
-  { id: '1', name: 'Sophia', image: 'https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=500&h=500&fit=crop', status: 'online' },
+  { id: '1', name: 'Ethan', image: 'https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=500&h=500&fit=crop', status: 'online' },
   { id: '2', name: 'Liam', image: 'https://plus.unsplash.com/premium_photo-1670282393309-70fd7f8eb1ef?q=80&w=500&h=500&fit=crop', status: 'offline' },
   { id: '3', name: 'Emily', image: 'https://plus.unsplash.com/premium_photo-1673792686302-7555a74de717?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', status: 'online' },
   { id: '4', name: 'Daniel', image: 'https://plus.unsplash.com/premium_photo-1664533227571-cb18551cac82?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', status: 'offline' },
@@ -29,8 +30,26 @@ const matches = [
 ];
 
 const MatchesScreen = () => {
+  const router = useRouter();
+
+  const handleProfilePress = (match) => {
+    // Navigate to profile page with match data
+    router.push({
+      pathname: `/profile/${match.id}`,
+      params: { 
+        id: match.id, 
+        name: match.name,
+        image: match.image,
+        status: match.status
+      }
+    });
+  };
+
   const renderItem = ({ item }) => (
-    <TouchableOpacity style={styles.card}>
+    <TouchableOpacity 
+      style={styles.card}
+      onPress={() => handleProfilePress(item)}
+    >
       <Image source={{ uri: item.image }} style={[styles.image, { width: IMAGE_SIZE, height: IMAGE_SIZE }]} />
       <Text style={styles.name}>{item.name}</Text>
       <View style={styles.statusContainer}>
