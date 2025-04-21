@@ -1,0 +1,29 @@
+info:
+  title: Dating App API
+  description: |
+    API documentation for the Dating App backend services.
+
+    This API provides authentication, profile management, matching algorithm, 
+    real-time chat system, and media handling capabilities for a modern dating application.
+
+    ## Authentication
+
+    Most endpoints require authentication using JWT Bearer tokens. 
+    To authenticate, include the JWT token in the Authorization header:
+
+    ```
+    Authorization: Bearer your-jwt-token
+    ```
+
+    ## Pagination
+
+    List endpoints support pagination with `page` and `limit` query parameters.
+
+  version: 1.0.0
+  contact:
+    name: API Support
+    email: support@datingapp.com
+
+servers:
+  - url: /api
+    description: API Server
