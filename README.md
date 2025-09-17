@@ -6,9 +6,8 @@
 
 ## 📷 **UI Screenshots**
 
-![ss1.png](attachment:fb9b3e92-c4c2-46ab-b50b-18061cf7d7a0:ss1.png)
-
-![ss2.png](attachment:6209a01b-5217-418a-a142-f94014328a1a:ss2.png)
+![Description for image 1](ui1.png)
+![Description for image 2](ui2.png)
 
 ### 🔧 **Technology Stack**
 
